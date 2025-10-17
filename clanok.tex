@@ -1,4 +1,4 @@
-\documentclass[10pt,twoside,english,a4paper]{article}
+\documentclass[10pt,twocolumn,twoside,english,a4paper]{article}
 
 \usepackage[IL2]{fontenc} 
 \usepackage[utf8]{inputenc}
@@ -6,4 +6,32 @@
 \usepackage{url} 
 \usepackage{hyperref} 
 \usepackage{cite}
+\usepackage{subcaption}
+
+\begin{document}
+
+\begin{figure*}[!htb]
+   \begin{minipage}[t]{0.6\linewidth}
+     \includegraphics[width=0.8\linewidth]{graph.pdf}
+     \caption{First figure in pdf}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}[t]{0.6\linewidth}
+     \includegraphics[width=0.7\linewidth]{graph.png}
+     \caption{First figure in png}\label{Fig:Data2}
+   \end{minipage}
+\end{figure*}
+
+
+\begin{figure*}[!htb]
+   \begin{minipage}[t]{0.6\linewidth}
+     \includegraphics[width=0.8\linewidth]{diagram1.pdf}
+     \caption{Second figure in pdf}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}[t]{0.6\linewidth}
+     \includegraphics[width=0.8\linewidth]{diagram1.png}
+     \caption{Second figure in png}\label{Fig:Data2}
+   \end{minipage}
+\end{figure*}
+
+\end{document}
 
