@@ -1,6 +1,7 @@
 \documentclass[10pt,twocolumn,twoside,english,a4paper]{article}
 
 \usepackage{placeins}
+
 \usepackage[IL2]{fontenc} 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -9,9 +10,15 @@
 \usepackage{cite}
 \usepackage{subcaption}
 \usepackage{float}
+\usepackage{amsmath} % for matrices and math environments
+\usepackage{lipsum}  
+\usepackage{geometry} 
+
 
 \begin{document}
 \section{Exercise 4}
+
+
 
 \begin{figure}[h]
    \begin{minipage}[t]{1\linewidth}
@@ -21,32 +28,6 @@
    \end{minipage}\hfill
 
 \end{figure}
-
-\vspace{-1em}
-
-
-\begin{figure*}[!htb]
-   \begin{minipage}[t]{0.6\linewidth}
-     \includegraphics[width=0.8\linewidth]{graph.pdf}
-     \caption{First figure in pdf}\label{Fig:Data1}
-   \end{minipage}\hfill
-   \begin{minipage}[t]{0.6\linewidth}
-     \includegraphics[width=0.7\linewidth]{graph.png}
-     \caption{First figure in png}\label{Fig:Data2}
-   \end{minipage}
-\end{figure*}
-
-
-\begin{figure*}[!htb]
-   \begin{minipage}[t]{0.6\linewidth}
-     \includegraphics[width=0.8\linewidth]{diagram1.pdf}
-     \caption{Second figure in pdf}\label{Fig:Data1b}
-   \end{minipage}\hfill
-   \begin{minipage}[t]{0.6\linewidth}
-     \includegraphics[width=0.8\linewidth]{diagram1.png}
-     \caption{Second figure in png}\label{Fig:Data3}
-   \end{minipage}
-\end{figure*}
 
 \FloatBarrier
 
@@ -62,7 +43,64 @@
 
 \end{figure}
 
-\mbox{}
+\section*{Matrix Example}
+
+Here is a $5 \times 4$ matrix:
+
+\[
+A = 
+\begin{bmatrix}
+1 & 2 & 3 & 4 \\
+5 & 6 & 7 & 8 \\
+9 & 10 & 11 & 12 \\
+13 & 14 & 15 & 16 \\
+17 & 18 & 19 & 20
+\end{bmatrix}
+\]
+
+\section*{Sequence Example}
+
+
+\[
+a_n = \frac{1}{n} \sum_{k=1}^{n} \left( \frac{k^2 + 3k + 5}{2^k} + \frac{\sin(k \pi / 4)}{k!} + \sum_{j=1}^{k} \frac{(-1)^j}{j^2 + 1} \right) + \sqrt[3]{\sum_{m=1}^{n} m^3}
+\]
+
+
+
+\begin{figure*}[!htb]
+   \begin{minipage}[t]{0.6\linewidth}
+     \includegraphics[width=0.8\linewidth]{graph.pdf}
+     \caption{First figure in pdf}\label{Fig:Data1}
+   \end{minipage}\hfill
+   \begin{minipage}[t]{0.6\linewidth}
+     \includegraphics[width=0.7\linewidth]{graph.png}
+     \caption{First figure in png}\label{Fig:Data2}
+   \end{minipage}
+\end{figure*}
+
+
+\begin{figure*}[h]
+   \begin{minipage}[t]{0.6\linewidth}
+     \includegraphics[width=0.8\linewidth]{diagram1.pdf}
+     \caption{Second figure in pdf}\label{Fig:Data1b}
+   \end{minipage}\hfill
+   \begin{minipage}[t]{0.6\linewidth}
+     \includegraphics[width=0.8\linewidth]{diagram1.png}
+     \caption{Second figure in png}\label{Fig:Data3}
+   \end{minipage}
+\end{figure*}
+
+\FloatBarrier
+
+
+
+
+
+
+
+
+
+
 
 \end{document}
 
